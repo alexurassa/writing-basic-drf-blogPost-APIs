@@ -46,11 +46,7 @@ class Post(DatetimeMixin):
 class PostComment(DatetimeMixin):
     """
     --------------------------------------
-    Model that retrieve user comment based on a
-    particular post
-
-    -----------------
-    Uses an email to identify the comment user
+    Model that retrieve user comment based on a particular Blog Post
     """
 
     post = models.ForeignKey(Post, on_delete=models.CASCADE)

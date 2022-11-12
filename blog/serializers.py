@@ -14,7 +14,6 @@ class PostSerializer(serializers.ModelSerializer):
         model = Post
         fields = "__all__"
 
-
 class PostCommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = PostComment
@@ -25,3 +24,5 @@ class PostTagSerializer(serializers.ModelSerializer):
     class Meta:
         model = PostTag
         fields = "__all__"
+
+
